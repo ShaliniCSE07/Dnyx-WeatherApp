@@ -15,5 +15,7 @@ A weather application built using HTML, TailwindCSS and Javascript
 - TailwindCSS  
 
 ## Live Demo
+https://dnyx-weather-app-wheat.vercel.app/
 
 ## Github Repository
+https://github.com/ShaliniCSE07/Dnyx-WeatherApp.git
