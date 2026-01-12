@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dnyx Weather App</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen bg-[url('sunset.jpg')] bg-cover bg-center bg-no-repeat flex items-center justify-center">
+
+
+
+<div class="bg-rose-50 p-3 rounded-2xl shadow-lg w-120 text-center">
+    <h1 class="text-3xl font-bold mb-4 flex items-center justify-center gap-2 text-teal-600">
+      🌤 Weather now
+    </h1>
+    
+    <input 
+      id="cityInput"
+      type="text"
+      placeholder="Enter city name"
+      class="w-full border p-2 rounded mb-3"
+    />
+
+    <button 
+      onclick="getWeather()"
+      class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+      Get Weather
+    </button>
+
+    <!-- Current weather output -->
+    <div id="weatherResult" class="mt-4"></div>
+  
+    <!-- Celsius/Fahrenheit toggle -->
+    <div id="toggleContainer" class="mt-3 hidden">
+      <button 
+        onclick="toggleTemp()"
+        class="bg-cyan-700 text-white px-4 py-1 rounded hover:bg-cyan-600">
+        Show °F
+      </button>
+    </div>
+
+    <!-- Forecast Section -->
+    <div id="forecastContainer" class="mt-4">
+      <h3 class="text-lg font-bold mb-2">5-Day Forecast</h3>
+      <div id="forecast" class="flex gap-4 overflow-x-auto"></div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
